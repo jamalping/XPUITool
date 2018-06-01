@@ -1,6 +1,0 @@
-framework module XPUtil {
-  umbrella header "XPUtil-umbrella.h"
-
-  export *
-  module * { export * }
-}
