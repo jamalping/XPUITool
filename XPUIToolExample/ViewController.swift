@@ -8,11 +8,34 @@
 
 import UIKit
 
+extension UIView {
+    public func circleView(frame: CGRect? = nil) {
+        print("yuan")
+        let aFrame = frame ?? self.bounds
+        let maskPath = UIBezierPath.init(roundedRect: aFrame, byRoundingCorners: .allCorners, cornerRadii: aFrame.size)
+        let maskLayer = CAShapeLayer.init()
+        maskLayer.path = maskPath.cgPath
+        self.layer.mask = maskLayer
+    }
+}
+
 class ViewController: UIViewController {
 
+    lazy var TCButton = TranslucentCircularButton.init(frame: CGRect.init(x: 0, y: 0, width: 50, height: 50), "videoClose")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.view.addSubview(TCButton)
+        TCButton.backgroundColor = .red
+        
+        layout()
+    }
+    func layout() {
+        TCButton.snp.makeConstraints { (make) in
+            make.top.left.equalTo(200)
+            make.width.height.equalTo(50)
+        }
     }
 
     override func didReceiveMemoryWarning() {

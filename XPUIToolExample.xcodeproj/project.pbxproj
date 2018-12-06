@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		144A5C913087B16EE308B6E5 /* Pods_XPUIToolExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161BDBC37747673AEAB58199 /* Pods_XPUIToolExample.framework */; };
+		18403ED621B7D14400AD0CF4 /* TranslucentCircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18403ED521B7D14400AD0CF4 /* TranslucentCircularButton.swift */; };
 		78250316CFAADE38E1A0290D /* Pods_XPUIToolExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7BF9F62064F65608C30FFDE /* Pods_XPUIToolExampleUITests.framework */; };
+		AE78056B9913866B5D26A51B /* Pods_XPUITool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F8CD869D961352DA3B1C63 /* Pods_XPUITool.framework */; };
 		E7576BD8EAE14F189068ED16 /* Pods_XPUIToolExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D57AD7AD492E5D413BBD8F7 /* Pods_XPUIToolExampleTests.framework */; };
 		F606527B20C12B9300DA2034 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F606527A20C12B9300DA2034 /* AppDelegate.swift */; };
 		F606527D20C12B9300DA2034 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F606527C20C12B9300DA2034 /* ViewController.swift */; };
@@ -89,9 +91,12 @@
 		0D57AD7AD492E5D413BBD8F7 /* Pods_XPUIToolExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XPUIToolExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10E1817E9D68BE6B70B06BAD /* Pods-XPUIToolExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUIToolExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPUIToolExampleTests/Pods-XPUIToolExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		161BDBC37747673AEAB58199 /* Pods_XPUIToolExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XPUIToolExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18403ED521B7D14400AD0CF4 /* TranslucentCircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslucentCircularButton.swift; sourceTree = "<group>"; };
+		6072634C0F464C468F7CF63E /* Pods-XPUITool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUITool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPUITool/Pods-XPUITool.debug.xcconfig"; sourceTree = "<group>"; };
 		611B4A6BE11C3D201E26CE5C /* Pods-XPUIToolExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUIToolExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPUIToolExampleUITests/Pods-XPUIToolExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7AA6CF8F5E2EF15C2E861EA9 /* Pods-XPUIToolExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUIToolExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPUIToolExample/Pods-XPUIToolExample.release.xcconfig"; sourceTree = "<group>"; };
 		BDE5BB00FD4B5CCBCFF8A4AB /* Pods-XPUIToolExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUIToolExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPUIToolExample/Pods-XPUIToolExample.debug.xcconfig"; sourceTree = "<group>"; };
+		C12C79EEBA5DA23FBB01B791 /* Pods-XPUITool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUITool.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPUITool/Pods-XPUITool.release.xcconfig"; sourceTree = "<group>"; };
 		C5A2E721B8925335F674EC08 /* Pods-XPUIToolExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUIToolExampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPUIToolExampleUITests/Pods-XPUIToolExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E288EC50CF8F3D6A91BA1745 /* Pods-XPUIToolExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUIToolExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPUIToolExampleTests/Pods-XPUIToolExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E7BF9F62064F65608C30FFDE /* Pods_XPUIToolExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XPUIToolExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +122,7 @@
 		F60652CC20C12C9E00DA2034 /* CountdownButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownButton.swift; sourceTree = "<group>"; };
 		F60652CD20C12C9E00DA2034 /* XPCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPCycleScrollView.swift; sourceTree = "<group>"; };
 		F60652CE20C12C9E00DA2034 /* TitleContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleContentView.swift; sourceTree = "<group>"; };
+		F7F8CD869D961352DA3B1C63 /* Pods_XPUITool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XPUITool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE78056B9913866B5D26A51B /* Pods_XPUITool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +176,7 @@
 				161BDBC37747673AEAB58199 /* Pods_XPUIToolExample.framework */,
 				0D57AD7AD492E5D413BBD8F7 /* Pods_XPUIToolExampleTests.framework */,
 				E7BF9F62064F65608C30FFDE /* Pods_XPUIToolExampleUITests.framework */,
+				F7F8CD869D961352DA3B1C63 /* Pods_XPUITool.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -255,6 +263,7 @@
 				F60652CE20C12C9E00DA2034 /* TitleContentView.swift */,
 				F60652CD20C12C9E00DA2034 /* XPCycleScrollView.swift */,
 				F60652CC20C12C9E00DA2034 /* CountdownButton.swift */,
+				18403ED521B7D14400AD0CF4 /* TranslucentCircularButton.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -268,6 +277,8 @@
 				10E1817E9D68BE6B70B06BAD /* Pods-XPUIToolExampleTests.release.xcconfig */,
 				611B4A6BE11C3D201E26CE5C /* Pods-XPUIToolExampleUITests.debug.xcconfig */,
 				C5A2E721B8925335F674EC08 /* Pods-XPUIToolExampleUITests.release.xcconfig */,
+				6072634C0F464C468F7CF63E /* Pods-XPUITool.debug.xcconfig */,
+				C12C79EEBA5DA23FBB01B791 /* Pods-XPUITool.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -352,6 +363,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F60652C820C12C4600DA2034 /* Build configuration list for PBXNativeTarget "XPUITool" */;
 			buildPhases = (
+				97FAD2F3A7B4700F8B86B4D8 /* [CP] Check Pods Manifest.lock */,
 				F60652A820C12C4600DA2034 /* Sources */,
 				F60652A920C12C4600DA2034 /* Frameworks */,
 				F60652AA20C12C4600DA2034 /* Headers */,
@@ -533,6 +545,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		97FAD2F3A7B4700F8B86B4D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XPUITool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CF1F7B495ECFB6856109C3B4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -560,6 +594,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18403ED621B7D14400AD0CF4 /* TranslucentCircularButton.swift in Sources */,
 				F60652D020C12C9E00DA2034 /* XPCycleScrollView.swift in Sources */,
 				F60652D120C12C9E00DA2034 /* TitleContentView.swift in Sources */,
 				F606527D20C12B9300DA2034 /* ViewController.swift in Sources */,
@@ -888,6 +923,7 @@
 		};
 		F60652C420C12C4600DA2034 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6072634C0F464C468F7CF63E /* Pods-XPUITool.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -915,6 +951,7 @@
 		};
 		F60652C520C12C4600DA2034 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C12C79EEBA5DA23FBB01B791 /* Pods-XPUITool.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
