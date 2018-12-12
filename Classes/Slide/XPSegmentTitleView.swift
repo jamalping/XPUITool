@@ -164,7 +164,7 @@ public class XPSegmentTitleView: UIView {
         
         layoutScrollViewSubView()
         
-        didSelectedIndex(selectIndex: self.selectedIndex)
+        defaultSelected()
     }
     
     
@@ -177,6 +177,11 @@ public class XPSegmentTitleView: UIView {
         didSelectedIndex(selectIndex: index)
     }
     
+    /// 默认选中位置
+    fileprivate func defaultSelected(selected: Int = 0) {
+        self.btnArray.first?.isSelected = true
+        underLineDidSelected(selected: selected, animation: false)
+    }
     
     /// 选中了某个位置
     ///
