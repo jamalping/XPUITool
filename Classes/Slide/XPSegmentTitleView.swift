@@ -19,7 +19,7 @@ import UIKit
 /// - equalTitle: 等于文字长度
 /// - custom: 自定义长度
 /// - none: 没有下划线
-enum UnderlineType {
+public enum UnderlineType {
     case equalButton
     case equalTitle
     case custom(width: CGFloat)
@@ -27,7 +27,7 @@ enum UnderlineType {
 }
 
 // MARK: - 滑动选择标题栏
-class XPSegmentTitleView: UIView {
+public class XPSegmentTitleView: UIView {
     
     var titles = [String]() {
         didSet{
@@ -54,7 +54,7 @@ class XPSegmentTitleView: UIView {
     /// 标题间距
     var itemMargin: CGFloat = 20
     /// 存档标题按钮的数组
-    var btnArray = [XPTitleButton]()
+    fileprivate var btnArray = [XPTitleButton]()
     /// 选中时的颜色
     var selectColor: UIColor = .red {
         didSet {
@@ -108,7 +108,7 @@ class XPSegmentTitleView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
         configPage()
@@ -157,7 +157,7 @@ class XPSegmentTitleView: UIView {
     /// 当加到父视图上，开始布局，并设置默认位置
     ///
     /// - Parameter newSuperview: <#newSuperview description#>
-    override func willMove(toSuperview newSuperview: UIView?) {
+    override public func willMove(toSuperview newSuperview: UIView?) {
         super.willMove(toSuperview: newSuperview)
         
         layoutScrollViewSubView()
@@ -171,9 +171,6 @@ class XPSegmentTitleView: UIView {
     /// - Parameter button: <#button description#>
     @objc func buttonClick(button: UIButton) {
         let index: Int = button.tag - defaultTag
-        if index == self.selectedIndex || index < 0 || index > self.titles.count - 1 {
-            return
-        }
         
         didSelectedIndex(selectIndex: index)
     }
@@ -182,8 +179,11 @@ class XPSegmentTitleView: UIView {
     /// 选中了某个位置
     ///
     /// - Parameter selectIndex: <#selectIndex description#>
-    func didSelectedIndex(selectIndex: Int) {
+    public func didSelectedIndex(selectIndex: Int) {
         
+        if selectIndex == self.selectedIndex || selectIndex < 0 || selectIndex > self.titles.count - 1 {
+            return
+        }
         let lastBTn = self.btnArray[self.selectedIndex]
         lastBTn.titleLabel?.font = self.titleNormalFont
         lastBTn.isSelected = false
@@ -197,6 +197,8 @@ class XPSegmentTitleView: UIView {
             self.delegate?.XPSegmentTitleSelectedIndex(index: selectIndex)
         }
         underLineDidSelected(selected: selectIndex, animation: true)
+        
+        showSelectedBtn(selectedIndex: selectIndex)
         
         self.selectedIndex = selectIndex
     }
@@ -235,7 +237,6 @@ class XPSegmentTitleView: UIView {
     /// - Parameter index: <#index description#>
     func showSelectedBtn(selectedIndex: Int) {
         let button = self.btnArray[selectedIndex]
-        print(button.left, button.right,self.scrollView.contentOffset.x,self.scrollView.width)
         if button.right > self.scrollView.contentOffset.x + self.scrollView.width {
             self.scrollView.setContentOffset(CGPoint.init(x: button.right - self.scrollView.width, y: 0), animated: true)
         }

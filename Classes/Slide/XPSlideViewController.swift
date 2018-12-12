@@ -18,8 +18,8 @@ class XPSlideViewController: UIViewController {
         super.viewDidLoad()
         
         titleView = XPSegmentTitleView.init(frame: CGRect.init(x: 0, y: 50, width: self.view.width, height: 50), titles: nil)
-        titleView?.titles = ["我的钱包","我的VIP"]
-        titleView?.underlineType = .equalTitle
+        titleView?.titles = ["我的钱包","我的VIP","我的钱包","我的VIP","我的钱包","我的VIP","我的钱包","我的VIP","我的钱包","我的VIP","我的钱包","我的VIP"]
+        titleView?.underlineType = .none
         titleView?.selectColor = .cyan
         titleView?.normalColor = .red
         titleView?.titleSelectFont = UIFont.systemFont(ofSize: 18)
@@ -39,7 +39,7 @@ class XPSlideViewController: UIViewController {
         contentView = XPPageContentView.init(frame: CGRect.init(x: 0, y: titleView?.bottom ?? 0, width: self.view.width, height: 200), childVCs: childVC, parentVC: self)
         contentView?.contentViewDidScroll = {(contentView, startIndex, endIndex) in
             print(contentView,startIndex,endIndex)
-            self.titleView?.btnArray[Int(endIndex)].sendActions(for: .touchUpInside)
+            self.titleView?.didSelectedIndex(selectIndex: Int(endIndex))
         }
         self.view.addSubview(contentView!)
     }
