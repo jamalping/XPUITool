@@ -23,6 +23,8 @@ class ViewController: UIViewController {
 
     lazy var TCButton = TranslucentCircularButton.init(frame: CGRect.init(x: 0, y: 0, width: 50, height: 50), "videoClose")
     
+    var contentView: XPPageContentView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,12 +32,20 @@ class ViewController: UIViewController {
         TCButton.backgroundColor = .red
         
         layout()
+        
+
+        
     }
     func layout() {
         TCButton.snp.makeConstraints { (make) in
             make.top.left.equalTo(200)
             make.width.height.equalTo(50)
         }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let vc = XPSlideViewController()
+        self.present(vc, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
