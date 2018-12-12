@@ -100,8 +100,10 @@ public class XPSegmentTitleView: UIView {
             self.titles = titles!
         }
         super.init(frame: frame)
+        
         configPage()
         
+        initSubViews()
     }
     
     required init?(coder aDecoder: NSCoder) {

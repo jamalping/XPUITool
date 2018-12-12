@@ -12,6 +12,8 @@
 		1812CA7E21C0A829003D6B40 /* XPPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812CA7D21C0A829003D6B40 /* XPPageContentView.swift */; };
 		1812CA8021C0B196003D6B40 /* TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812CA7F21C0B196003D6B40 /* TVC.swift */; };
 		1812CA8221C0BCCA003D6B40 /* XPSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812CA8121C0BCCA003D6B40 /* XPSlideViewController.swift */; };
+		1812CA8D21C0F53C003D6B40 /* TitleTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812CA8C21C0F53B003D6B40 /* TitleTextFeild.swift */; };
+		1812CA8F21C0F553003D6B40 /* ImageTitleDesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812CA8E21C0F552003D6B40 /* ImageTitleDesView.swift */; };
 		18403ED621B7D14400AD0CF4 /* TranslucentCircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18403ED521B7D14400AD0CF4 /* TranslucentCircularButton.swift */; };
 		78250316CFAADE38E1A0290D /* Pods_XPUIToolExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7BF9F62064F65608C30FFDE /* Pods_XPUIToolExampleUITests.framework */; };
 		AE78056B9913866B5D26A51B /* Pods_XPUITool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F8CD869D961352DA3B1C63 /* Pods_XPUITool.framework */; };
@@ -99,6 +101,8 @@
 		1812CA7D21C0A829003D6B40 /* XPPageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPPageContentView.swift; sourceTree = "<group>"; };
 		1812CA7F21C0B196003D6B40 /* TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVC.swift; sourceTree = "<group>"; };
 		1812CA8121C0BCCA003D6B40 /* XPSlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPSlideViewController.swift; sourceTree = "<group>"; };
+		1812CA8C21C0F53B003D6B40 /* TitleTextFeild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTextFeild.swift; sourceTree = "<group>"; };
+		1812CA8E21C0F552003D6B40 /* ImageTitleDesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTitleDesView.swift; sourceTree = "<group>"; };
 		18403ED521B7D14400AD0CF4 /* TranslucentCircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslucentCircularButton.swift; sourceTree = "<group>"; };
 		6072634C0F464C468F7CF63E /* Pods-XPUITool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUITool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPUITool/Pods-XPUITool.debug.xcconfig"; sourceTree = "<group>"; };
 		611B4A6BE11C3D201E26CE5C /* Pods-XPUIToolExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUIToolExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPUIToolExampleUITests/Pods-XPUIToolExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -281,9 +285,11 @@
 			children = (
 				1812CA7621BFBBE3003D6B40 /* Slide */,
 				F60652CE20C12C9E00DA2034 /* TitleContentView.swift */,
+				1812CA8E21C0F552003D6B40 /* ImageTitleDesView.swift */,
 				F60652CD20C12C9E00DA2034 /* XPCycleScrollView.swift */,
 				F60652CC20C12C9E00DA2034 /* CountdownButton.swift */,
 				18403ED521B7D14400AD0CF4 /* TranslucentCircularButton.swift */,
+				1812CA8C21C0F53B003D6B40 /* TitleTextFeild.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -616,10 +622,12 @@
 			files = (
 				18403ED621B7D14400AD0CF4 /* TranslucentCircularButton.swift in Sources */,
 				1812CA7A21BFD768003D6B40 /* XPSegmentTitleView.swift in Sources */,
+				1812CA8F21C0F553003D6B40 /* ImageTitleDesView.swift in Sources */,
 				F60652D020C12C9E00DA2034 /* XPCycleScrollView.swift in Sources */,
 				F60652D120C12C9E00DA2034 /* TitleContentView.swift in Sources */,
 				1812CA8221C0BCCA003D6B40 /* XPSlideViewController.swift in Sources */,
 				1812CA8021C0B196003D6B40 /* TVC.swift in Sources */,
+				1812CA8D21C0F53C003D6B40 /* TitleTextFeild.swift in Sources */,
 				F606527D20C12B9300DA2034 /* ViewController.swift in Sources */,
 				1812CA7E21C0A829003D6B40 /* XPPageContentView.swift in Sources */,
 				F606527B20C12B9300DA2034 /* AppDelegate.swift in Sources */,
