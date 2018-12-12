@@ -19,6 +19,12 @@ class XPSlideViewController: UIViewController {
         
         titleView = XPSegmentTitleView.init(frame: CGRect.init(x: 0, y: 50, width: self.view.width, height: 50), titles: nil)
         titleView?.titles = ["我的钱包","我的VIP"]
+        titleView?.underlineType = .equalTitle
+        titleView?.selectColor = .cyan
+        titleView?.normalColor = .red
+        titleView?.titleSelectFont = UIFont.systemFont(ofSize: 18)
+        titleView?.titleNormalFont = UIFont.systemFont(ofSize: 15)
+        
         titleView?.xpSegmentTitleClick = {(index) in
             self.contentView?.currentIndex = index
         }
