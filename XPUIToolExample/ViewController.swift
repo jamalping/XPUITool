@@ -25,8 +25,9 @@ class ViewController: UIViewController {
         case translucentCircularButton = "translucentCircularButton"
         case slid = "slid"
         case titleTextFeil = "titleTextFeil"
+        case gift = "gift"
     }
-    let datasource: [TestType] = [.translucentCircularButton, .slid, .titleTextFeil]
+    let datasource: [TestType] = [.translucentCircularButton, .slid, .titleTextFeil, .gift]
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -69,6 +70,9 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
             self.navigationController?.pushViewController(vc, animated: true)
         case .titleTextFeil:
             let vc = TestVC1()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .gift:
+            let vc = TestVC2()
             self.navigationController?.pushViewController(vc, animated: true)
         default: break
             
