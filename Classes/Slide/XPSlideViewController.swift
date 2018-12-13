@@ -17,9 +17,11 @@ class XPSlideViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleView = XPSegmentTitleView.init(frame: CGRect.init(x: 0, y: 50, width: self.view.width, height: 50), titles: nil)
+        self.view.backgroundColor = .white
+        
+        titleView = XPSegmentTitleView.init(frame: CGRect.init(x: 0, y: 100, width: self.view.width, height: 50), titles: nil)
         titleView?.titles = ["我的钱包","我的VIP","我的钱包","我的VIP","我的钱包","我的VIP","我的钱包","我的VIP","我的钱包","我的VIP","我的钱包","我的VIP"]
-        titleView?.underlineType = .none
+        titleView?.underlineType = .equalButton
         titleView?.selectColor = .cyan
         titleView?.normalColor = .red
         titleView?.titleSelectFont = UIFont.systemFont(ofSize: 18)
@@ -32,8 +34,9 @@ class XPSlideViewController: UIViewController {
         
         var childVC = [UIViewController]()
         titleView?.titles.forEach { (_) in
-            
-            childVC.append(TVC())
+            let vc = UIViewController()
+            vc.view.backgroundColor = UIColor.randamColor()
+            childVC.append(vc)
         }
         
         contentView = XPPageContentView.init(frame: CGRect.init(x: 0, y: titleView?.bottom ?? 0, width: self.view.width, height: 200), childVCs: childVC, parentVC: self)

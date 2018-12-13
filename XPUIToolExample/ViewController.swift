@@ -21,32 +21,20 @@ extension UIView {
 
 class ViewController: UIViewController {
 
-    lazy var TCButton = TranslucentCircularButton.init(frame: CGRect.init(x: 0, y: 0, width: 50, height: 50), "videoClose")
+    enum TestType: String {
+        case translucentCircularButton = "translucentCircularButton"
+        case slid = "slid"
+        case titleTextFeil = "titleTextFeil"
+    }
+    let datasource: [TestType] = [.translucentCircularButton, .slid, .titleTextFeil]
+    @IBOutlet weak var tableView: UITableView!
     
-    var contentView: XPPageContentView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.view.addSubview(TCButton)
-        TCButton.backgroundColor = .red
         
-        layout()
-        
-
-        
-    }
-    func layout() {
-        TCButton.snp.makeConstraints { (make) in
-            make.top.left.equalTo(200)
-            make.width.height.equalTo(50)
-        }
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let vc = XPSlideViewController()
-        self.present(vc, animated: true, completion: nil)
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -54,5 +42,37 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+extension ViewController: UITableViewDataSource,UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.datasource.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell: UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: "cell")
+        if cell == nil {
+            cell = UITableViewCell.init(style: .default, reuseIdentifier: "cell")
+        }
+        cell!.textLabel?.text = self.datasource[indexPath.row].rawValue
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        switch self.datasource[indexPath.row] {
+        case .translucentCircularButton:
+            let vc = TestVC1()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .slid:
+            let vc = XPSlideViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .titleTextFeil:
+            let vc = TestVC1()
+            self.navigationController?.pushViewController(vc, animated: true)
+        default: break
+            
+        }
+    }
 }
 
