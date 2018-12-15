@@ -17,7 +17,7 @@ class GiftListView: UIView {
     
     var dataSource: [GiftModel] = [GiftModel]() {
         didSet {
-            self.collectionView.reloadData()
+//            self.collectionView.reloadData()
         }
     }
     
@@ -42,7 +42,7 @@ class GiftListView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
     
-        self.backgroundColor = UIColor.init(white: 0.0, alpha: 0.3)
+        self.backgroundColor = UIColor.init(white: 0.5, alpha: 0.5)
         
         let tap = UITapGestureRecognizer.init(target: self, action: #selector(tapAction))
         tap.delegate = self
@@ -54,6 +54,7 @@ class GiftListView: UIView {
     func configPage() {
         self.top = markView.height - self.height
         self.addSubview(collectionView)
+        collectionView.backgroundColor = UIColor.clear
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -100,6 +101,7 @@ extension GiftListView: UICollectionViewDataSource, UICollectionViewDelegateFlow
         let cell: GiftCollectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: GiftCollectionCell.cellIdenti, for: indexPath) as! GiftCollectionCell
         let giftModel = self.dataSource[indexPath.row]
         cell.data = giftModel
+        cell.backgroundColor = UIColor.clear
         return cell
     }
     

@@ -23,6 +23,11 @@ class GiftCollectionCell: UICollectionViewCell {
         }
     }
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+//        self.backgroundColor = UIColor.init(white: 1.0, alpha: 0.0)
+    }
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var desLabel: UILabel!

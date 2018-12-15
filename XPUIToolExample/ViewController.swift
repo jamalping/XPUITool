@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         case translucentCircularButton = "translucentCircularButton"
         case slid = "slid"
         case titleTextFeil = "titleTextFeil"
-        case gift = "gift"
+        case gift = "giftListView"
     }
     let datasource: [TestType] = [.translucentCircularButton, .slid, .titleTextFeil, .gift]
     @IBOutlet weak var tableView: UITableView!

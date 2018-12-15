@@ -15,7 +15,7 @@ class TestVC2: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
+        view.backgroundColor = .red
         
         testGiftButton()
         
@@ -53,7 +53,7 @@ class TestVC2: UIViewController {
         btn2.snp.makeConstraints { (make) in
             make.width.height.equalTo(100)
             make.left.equalTo(0)
-            make.top.equalTo(100)
+            make.bottom.equalTo(view)
         }
         
         let btn3 = GiftButton.init(frame: .zero, imageName: "testImg", titleType: .none)
