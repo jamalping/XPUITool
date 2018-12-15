@@ -68,7 +68,7 @@ extension ParticleAnimationable where Self : UIViewController {
         view.layer.addSublayer(emitter)
     }
     
-    /// 线性粒子
+    /// 粒子动画图层
     func particleAnimation() -> CAEmitterLayer {
         let emitter = CAEmitterLayer()
         let viewBounds = self.view.bounds
@@ -87,7 +87,7 @@ extension ParticleAnimationable where Self : UIViewController {
         
         return emitter
     }
-    
+    /// rocket 发射效果（线性）
     func rocktParticleAnimation() -> CAEmitterCell {
         let rocket = CAEmitterCell()
         // 出生率：每秒产生cell的数量
@@ -115,7 +115,7 @@ extension ParticleAnimationable where Self : UIViewController {
         return rocket
     }
     
-    /// 爆炸效果
+    /// 破裂效果
     func burstParticleAnimation() -> CAEmitterCell {
         let burst = CAEmitterCell()
         burst.birthRate = 1.0
@@ -148,7 +148,7 @@ extension ParticleAnimationable where Self : UIViewController {
         
         return spark
     }
-    
+    /// 将粒子动画图层加到目标图层上
     func showCustomParticle(emitter: CAEmitterLayer) {
         
         /// 加上前，先把所有的粒子动画的layer层移除
@@ -156,7 +156,7 @@ extension ParticleAnimationable where Self : UIViewController {
         
         view.layer.addSublayer(emitter)
     }
-    
+    /// 移除粒子动画图层
     func stopParticleAnimation() {
        
         view.layer.sublayers?.filter{ $0.isKind(of: CAEmitterLayer.self)}.forEach{ $0.removeFromSuperlayer() }
@@ -212,14 +212,104 @@ extension ParticleAnimationable where Self : UIView {
         
         // 5.将粒子设置到发射器中
         emitter.emitterCells = cells
-        
+        // 先移除
         stopParticleAnimation()
         // 6.将发射器的layer添加到父layer中
         self.layer.addSublayer(emitter)
     }
     
+    /// 粒子动画图层
+    func particleAnimation() -> CAEmitterLayer {
+        let emitter = CAEmitterLayer()
+        let viewBounds = self.bounds
+        // 设置发射位置
+        emitter.emitterPosition = CGPoint.init(x: viewBounds.width/2, y: viewBounds.height)
+        // 发射器大小
+        emitter.emitterSize = CGSize.init(width: viewBounds.width/2, height: 0.0)
+        // 发射模式
+        emitter.emitterMode = kCAEmitterLayerOutline
+        // 发射器形状
+        emitter.emitterShape = kCAEmitterLayerLine
+        // 叠加显示
+        emitter.renderMode = kCAEmitterLayerAdditive
+        
+        emitter.seed = arc4random()%100+1
+        
+        return emitter
+    }
+    /// rocket 发射效果（线性）
+    func rocktParticleAnimation() -> CAEmitterCell {
+        let rocket = CAEmitterCell()
+        // 出生率：每秒产生cell的数量
+        rocket.birthRate = 2
+        // 发射角度
+        rocket.emissionRange = CGFloat.pi/9.0
+        // 速度
+        rocket.velocity = 380
+        // y方向加速度分量
+        rocket.yAcceleration = 100
+        // 生命周期（存在的时间）
+        rocket.lifetime = 1.02
+        // 设置动画图片
+        rocket.contents = UIImage.init(named: "talk_gift")?.cgImage
+        // 缩放比例
+        rocket.scale = 0.2
+        
+        // 粒子在rgb三个色想上的容差和透明度的容差
+        rocket.greenRange = 1.0
+        rocket.redRange = 1.0
+        rocket.blueRange = 1.0
+        // 自旋速度
+        rocket.spinRange = CGFloat.pi
+        
+        return rocket
+    }
+    
+    /// 破裂效果
+    func burstParticleAnimation() -> CAEmitterCell {
+        let burst = CAEmitterCell()
+        burst.birthRate = 1.0
+        burst.velocity = 0
+        burst.scale = 2.5
+        burst.redSpeed = -1.5
+        burst.blueSpeed = 1.5
+        burst.greenSpeed = 1.0
+        burst.lifetime = 0.35
+        
+        return burst
+    }
+    
+    /// 爆炸效果
+    func sparkParticleAnimation() -> CAEmitterCell {
+        let spark = CAEmitterCell()
+        spark.birthRate = 50
+        spark.velocity = 125
+        spark.emissionRange = 2.0*CGFloat.pi
+        spark.yAcceleration = 75
+        spark.scale = 1.5
+        spark.scaleSpeed = -0.2
+        spark.redSpeed = -0.1
+        spark.blueSpeed = 0.4
+        spark.greenSpeed = -0.5
+        spark.lifetime = 3
+        spark.contents = UIImage.init(named: "talk_gift")?.cgImage
+        spark.spin = 2.0*CGFloat.pi
+        spark.spinRange = 2.0*CGFloat.pi
+        
+        return spark
+    }
+    /// 将粒子动画图层加到目标图层上
+    func showCustomParticle(emitter: CAEmitterLayer) {
+        
+        /// 加上前，先把所有的粒子动画的layer层移除
+        stopParticleAnimation()
+        
+        self.layer.addSublayer(emitter)
+    }
+    /// 移除粒子动画图层
     func stopParticleAnimation() {
         
         self.layer.sublayers?.filter{ $0.isKind(of: CAEmitterLayer.self)}.forEach{ $0.removeFromSuperlayer() }
     }
 }
+
