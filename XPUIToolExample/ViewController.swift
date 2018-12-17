@@ -27,8 +27,9 @@ class ViewController: UIViewController {
         case titleTextFeil = "titleTextFeil"
         case gift = "giftListView"
         case animation = "animation"
+        case tiledLayer = "CATiledLayer加载大图"
     }
-    let datasource: [TestType] = [.translucentCircularButton, .slid, .titleTextFeil, .gift, .animation]
+    let datasource: [TestType] = [.translucentCircularButton, .slid, .titleTextFeil, .gift, .animation, .tiledLayer]
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -77,7 +78,9 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
             self.navigationController?.pushViewController(vc, animated: true)
         case .animation:
             let vc = TestAnimationVC()
-//                .init(nibName: "TestAnimationVC", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .tiledLayer:
+            let vc = TestTiledLayerVC()
             self.navigationController?.pushViewController(vc, animated: true)
         default: break
             
