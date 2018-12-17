@@ -45,6 +45,8 @@
 		18F924FF21C4E1D100C1BBA6 /* good9_30x30_@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F924FD21C4E1D100C1BBA6 /* good9_30x30_@3x.png */; };
 		18F9250121C4E9F000C1BBA6 /* ParticleAnimationable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9250021C4E9F000C1BBA6 /* ParticleAnimationable.swift */; };
 		18F9250321C50C3200C1BBA6 /* TestTiledLayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9250221C50C3200C1BBA6 /* TestTiledLayerVC.swift */; };
+		18F9250A21C778C600C1BBA6 /* XPPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9250921C778C600C1BBA6 /* XPPickView.swift */; };
+		18F9250C21C779B300C1BBA6 /* TestXPPickerViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9250B21C779B300C1BBA6 /* TestXPPickerViewVC.swift */; };
 		78250316CFAADE38E1A0290D /* Pods_XPUIToolExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7BF9F62064F65608C30FFDE /* Pods_XPUIToolExampleUITests.framework */; };
 		AE78056B9913866B5D26A51B /* Pods_XPUITool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F8CD869D961352DA3B1C63 /* Pods_XPUITool.framework */; };
 		E7576BD8EAE14F189068ED16 /* Pods_XPUIToolExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D57AD7AD492E5D413BBD8F7 /* Pods_XPUIToolExampleTests.framework */; };
@@ -164,6 +166,8 @@
 		18F924FD21C4E1D100C1BBA6 /* good9_30x30_@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "good9_30x30_@3x.png"; sourceTree = "<group>"; };
 		18F9250021C4E9F000C1BBA6 /* ParticleAnimationable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleAnimationable.swift; sourceTree = "<group>"; };
 		18F9250221C50C3200C1BBA6 /* TestTiledLayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTiledLayerVC.swift; sourceTree = "<group>"; };
+		18F9250921C778C600C1BBA6 /* XPPickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPPickView.swift; sourceTree = "<group>"; };
+		18F9250B21C779B300C1BBA6 /* TestXPPickerViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestXPPickerViewVC.swift; sourceTree = "<group>"; };
 		6072634C0F464C468F7CF63E /* Pods-XPUITool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUITool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPUITool/Pods-XPUITool.debug.xcconfig"; sourceTree = "<group>"; };
 		611B4A6BE11C3D201E26CE5C /* Pods-XPUIToolExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUIToolExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPUIToolExampleUITests/Pods-XPUIToolExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7AA6CF8F5E2EF15C2E861EA9 /* Pods-XPUIToolExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUIToolExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPUIToolExample/Pods-XPUIToolExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -260,6 +264,7 @@
 				18F924D221C4D79D00C1BBA6 /* TestAnimationVC.swift */,
 				18F924D521C4DABE00C1BBA6 /* TestAnimationVC.xib */,
 				18F9250221C50C3200C1BBA6 /* TestTiledLayerVC.swift */,
+				18F9250B21C779B300C1BBA6 /* TestXPPickerViewVC.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -412,6 +417,7 @@
 				F60652CC20C12C9E00DA2034 /* CountdownButton.swift */,
 				18403ED521B7D14400AD0CF4 /* TranslucentCircularButton.swift */,
 				1812CA8C21C0F53B003D6B40 /* TitleTextFeild.swift */,
+				18F9250921C778C600C1BBA6 /* XPPickView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -764,10 +770,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F9250C21C779B300C1BBA6 /* TestXPPickerViewVC.swift in Sources */,
 				18EC103E21C26B4A0071824D /* GiftCollectionCell.swift in Sources */,
 				18403ED621B7D14400AD0CF4 /* TranslucentCircularButton.swift in Sources */,
 				18F9250321C50C3200C1BBA6 /* TestTiledLayerVC.swift in Sources */,
 				1812CA7A21BFD768003D6B40 /* XPSegmentTitleView.swift in Sources */,
+				18F9250A21C778C600C1BBA6 /* XPPickView.swift in Sources */,
 				18F9250121C4E9F000C1BBA6 /* ParticleAnimationable.swift in Sources */,
 				1812CA8F21C0F553003D6B40 /* ImageTitleDesView.swift in Sources */,
 				F60652D020C12C9E00DA2034 /* XPCycleScrollView.swift in Sources */,

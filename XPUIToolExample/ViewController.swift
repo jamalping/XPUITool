@@ -28,8 +28,9 @@ class ViewController: UIViewController {
         case gift = "giftListView"
         case animation = "animation"
         case tiledLayer = "CATiledLayer加载大图"
+        case xppickerView = "测试xppickerView"
     }
-    let datasource: [TestType] = [.translucentCircularButton, .slid, .titleTextFeil, .gift, .animation, .tiledLayer]
+    let datasource: [TestType] = [.translucentCircularButton, .slid, .titleTextFeil, .gift, .animation, .tiledLayer, .xppickerView]
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -81,6 +82,9 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
             self.navigationController?.pushViewController(vc, animated: true)
         case .tiledLayer:
             let vc = TestTiledLayerVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .xppickerView:
+            let vc = TestXPPickerViewVC()
             self.navigationController?.pushViewController(vc, animated: true)
         default: break
             
