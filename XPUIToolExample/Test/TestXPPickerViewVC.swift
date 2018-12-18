@@ -15,6 +15,22 @@ class TestXPPickerViewVC: UIViewController {
         view.backgroundColor = .white
         
         pickerView = XPPickerView.init(.recentYear)
+        
+        testITD()
+    }
+    
+    func testITD() {
+//        ImgTitleDesView
+        guard let i = Bundle.main.loadNibNamed("ImgTitleDesView", owner: nil, options: nil)?.first as? ImgTitleDesView else {
+            return
+        }
+        i.backgroundColor = .blue
+        view.addSubview(i)
+        i.snp.makeConstraints { (make) in
+            make.left.top.equalTo(150)
+            make.height.equalTo(154)
+            make.width.equalTo(100)
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

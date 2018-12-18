@@ -47,6 +47,8 @@
 		18F9250321C50C3200C1BBA6 /* TestTiledLayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9250221C50C3200C1BBA6 /* TestTiledLayerVC.swift */; };
 		18F9250A21C778C600C1BBA6 /* XPPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9250921C778C600C1BBA6 /* XPPickView.swift */; };
 		18F9250C21C779B300C1BBA6 /* TestXPPickerViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F9250B21C779B300C1BBA6 /* TestXPPickerViewVC.swift */; };
+		18FBC35B21C8815C00FBD25C /* ImgTitleDesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FBC35921C8815B00FBD25C /* ImgTitleDesView.swift */; };
+		18FBC35C21C8815C00FBD25C /* ImgTitleDesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FBC35A21C8815B00FBD25C /* ImgTitleDesView.xib */; };
 		78250316CFAADE38E1A0290D /* Pods_XPUIToolExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7BF9F62064F65608C30FFDE /* Pods_XPUIToolExampleUITests.framework */; };
 		AE78056B9913866B5D26A51B /* Pods_XPUITool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F8CD869D961352DA3B1C63 /* Pods_XPUITool.framework */; };
 		E7576BD8EAE14F189068ED16 /* Pods_XPUIToolExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D57AD7AD492E5D413BBD8F7 /* Pods_XPUIToolExampleTests.framework */; };
@@ -168,6 +170,8 @@
 		18F9250221C50C3200C1BBA6 /* TestTiledLayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTiledLayerVC.swift; sourceTree = "<group>"; };
 		18F9250921C778C600C1BBA6 /* XPPickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPPickView.swift; sourceTree = "<group>"; };
 		18F9250B21C779B300C1BBA6 /* TestXPPickerViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestXPPickerViewVC.swift; sourceTree = "<group>"; };
+		18FBC35921C8815B00FBD25C /* ImgTitleDesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImgTitleDesView.swift; sourceTree = "<group>"; };
+		18FBC35A21C8815B00FBD25C /* ImgTitleDesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImgTitleDesView.xib; sourceTree = "<group>"; };
 		6072634C0F464C468F7CF63E /* Pods-XPUITool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUITool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPUITool/Pods-XPUITool.debug.xcconfig"; sourceTree = "<group>"; };
 		611B4A6BE11C3D201E26CE5C /* Pods-XPUIToolExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUIToolExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPUIToolExampleUITests/Pods-XPUIToolExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7AA6CF8F5E2EF15C2E861EA9 /* Pods-XPUIToolExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUIToolExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPUIToolExample/Pods-XPUIToolExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -408,6 +412,8 @@
 		F60652CB20C12C8700DA2034 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				18FBC35921C8815B00FBD25C /* ImgTitleDesView.swift */,
+				18FBC35A21C8815B00FBD25C /* ImgTitleDesView.xib */,
 				18F924D421C4D81F00C1BBA6 /* Animation */,
 				18EC103421C246C40071824D /* Gift */,
 				1812CA7621BFBBE3003D6B40 /* Slide */,
@@ -626,6 +632,7 @@
 				18F924FE21C4E1D100C1BBA6 /* good9_30x30_@2x.png in Resources */,
 				18EC104021C26B7F0071824D /* GiftCollectionCell.xib in Resources */,
 				18F924E621C4E19D00C1BBA6 /* good3_30x30_@2x.png in Resources */,
+				18FBC35C21C8815C00FBD25C /* ImgTitleDesView.xib in Resources */,
 				18F924EE21C4E1AD00C1BBA6 /* good5_30x30_@3x.png in Resources */,
 				18F924EF21C4E1AD00C1BBA6 /* good5_30x30_@2x.png in Resources */,
 				F606528220C12B9400DA2034 /* Assets.xcassets in Resources */,
@@ -789,6 +796,7 @@
 				F606527D20C12B9300DA2034 /* ViewController.swift in Sources */,
 				1812CA7E21C0A829003D6B40 /* XPPageContentView.swift in Sources */,
 				F606527B20C12B9300DA2034 /* AppDelegate.swift in Sources */,
+				18FBC35B21C8815C00FBD25C /* ImgTitleDesView.swift in Sources */,
 				F60652CF20C12C9E00DA2034 /* CountdownButton.swift in Sources */,
 				18EC103621C2477C0071824D /* GiftButton.swift in Sources */,
 				18EC103821C251900071824D /* TestVC2.swift in Sources */,
