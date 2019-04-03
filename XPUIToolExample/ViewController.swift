@@ -17,6 +17,17 @@ extension UIView {
         maskLayer.path = maskPath.cgPath
         self.layer.mask = maskLayer
     }
+    
+    /// 将View裁剪成圆形
+    ///
+    /// - Parameter radius: 数值
+    public func radiusView(radius:CGFloat) {
+        
+        let maskPath = UIBezierPath.init(roundedRect: self.bounds, cornerRadius: radius)
+        let maskLayer = CAShapeLayer.init()
+        maskLayer.path = maskPath.cgPath
+        self.layer.mask = maskLayer
+    }
 }
 
 class ViewController: UIViewController {
@@ -29,8 +40,12 @@ class ViewController: UIViewController {
         case animation = "animation"
         case tiledLayer = "CATiledLayer加载大图"
         case xppickerView = "测试xppickerView"
+        case xpOnlineBtn = "测试在线动画按钮"
+        case xpRotantion = "旋转放大动画"
+        case continousSendGif = "连续送礼物动画"
+        case tapZan = "仿抖音点赞动画"
     }
-    let datasource: [TestType] = [.translucentCircularButton, .slid, .titleTextFeil, .gift, .animation, .tiledLayer, .xppickerView]
+    let datasource: [TestType] = [.translucentCircularButton, .slid, .titleTextFeil, .gift, .animation, .tiledLayer, .xppickerView, .xpOnlineBtn, .xpRotantion, .continousSendGif,.tapZan]
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -86,6 +101,20 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
         case .xppickerView:
             let vc = TestXPPickerViewVC()
             self.navigationController?.pushViewController(vc, animated: true)
+        case .xpOnlineBtn:
+            let vc = TestOnlineButtonVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .xpRotantion:
+            let vc = TestRotationVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .continousSendGif:
+            let vc = TestcontinueSendGifVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .tapZan:
+            
+            let vc = TestTapZanVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+            
         default: break
             
         }

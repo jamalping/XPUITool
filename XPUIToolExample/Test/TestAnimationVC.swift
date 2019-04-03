@@ -13,8 +13,9 @@ class TestAnimationVC: UIViewController, ParticleAnimationable {
         case Emitter = "粒子动画-图片数组"
         case lineEmitter = "自定义粒子动画 - 线性"
         case lineBurstEmitter = "自定义粒子动画 - 线性 - 爆炸效果"
+        case radiate = "向四周扩散动画"
     }
-    var dataSource: [AnimationType] = [.Emitter, .lineEmitter, .lineBurstEmitter]
+    var dataSource: [AnimationType] = [.Emitter, .lineEmitter, .lineBurstEmitter, .radiate]
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +55,6 @@ extension TestAnimationVC: UITableViewDelegate, UITableViewDataSource {
             let rockt = rocktParticleAnimation()
             emitterLayer.emitterCells = [rockt]
             
-            
             self.showCustomParticle(emitter: emitterLayer)
             
         case .lineBurstEmitter:
@@ -66,6 +66,8 @@ extension TestAnimationVC: UITableViewDelegate, UITableViewDataSource {
             rockt.emitterCells = [burst]
             burst.emitterCells = [spark]
             self.showCustomParticle(emitter: emitterLayer)
+        case .radiate:
+            self.navigationController?.pushViewController(AnimationVC1(), animated: true)
         default: break
             
         }
