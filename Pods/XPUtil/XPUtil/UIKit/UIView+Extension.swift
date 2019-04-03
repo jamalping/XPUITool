@@ -23,7 +23,7 @@ public extension UIView {
         get { return self.frame.maxX }
     }
     public var bottom: CGFloat {
-        set { self.frame.origin.y = newValue - self.frame.maxY }
+        set { self.frame.origin.y = newValue - self.frame.height }
         get { return self.frame.maxY }
     }
     
