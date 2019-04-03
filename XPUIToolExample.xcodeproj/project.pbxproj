@@ -13,6 +13,8 @@
 		1812CA8221C0BCCA003D6B40 /* XPSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812CA8121C0BCCA003D6B40 /* XPSlideViewController.swift */; };
 		1812CA8D21C0F53C003D6B40 /* TitleTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812CA8C21C0F53B003D6B40 /* TitleTextFeild.swift */; };
 		1812CA8F21C0F553003D6B40 /* ImageTitleDesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1812CA8E21C0F552003D6B40 /* ImageTitleDesView.swift */; };
+		182C2B682254E09E00ABB765 /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182C2B662254E09700ABB765 /* WaveView.swift */; };
+		182C2B692254E09E00ABB765 /* 水波纹.png in Resources */ = {isa = PBXBuildFile; fileRef = 182C2B672254E09900ABB765 /* 水波纹.png */; };
 		1837493921FF09710067BABB /* TestTapZanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837493821FF09710067BABB /* TestTapZanVC.swift */; };
 		1837493B21FFF30D0067BABB /* XPAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837493A21FFF30D0067BABB /* XPAnimate.swift */; };
 		18403ED621B7D14400AD0CF4 /* TranslucentCircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18403ED521B7D14400AD0CF4 /* TranslucentCircularButton.swift */; };
@@ -147,6 +149,8 @@
 		1812CA8121C0BCCA003D6B40 /* XPSlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPSlideViewController.swift; sourceTree = "<group>"; };
 		1812CA8C21C0F53B003D6B40 /* TitleTextFeild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTextFeild.swift; sourceTree = "<group>"; };
 		1812CA8E21C0F552003D6B40 /* ImageTitleDesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTitleDesView.swift; sourceTree = "<group>"; };
+		182C2B662254E09700ABB765 /* WaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
+		182C2B672254E09900ABB765 /* 水波纹.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "水波纹.png"; sourceTree = "<group>"; };
 		1837493821FF09710067BABB /* TestTapZanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTapZanVC.swift; sourceTree = "<group>"; };
 		1837493A21FFF30D0067BABB /* XPAnimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPAnimate.swift; sourceTree = "<group>"; };
 		18403ED521B7D14400AD0CF4 /* TranslucentCircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslucentCircularButton.swift; sourceTree = "<group>"; };
@@ -280,6 +284,15 @@
 				1812CA8121C0BCCA003D6B40 /* XPSlideViewController.swift */,
 			);
 			path = Slide;
+			sourceTree = "<group>";
+		};
+		182C2B652254E04E00ABB765 /* 水波纹动画 */ = {
+			isa = PBXGroup;
+			children = (
+				182C2B672254E09900ABB765 /* 水波纹.png */,
+				182C2B662254E09700ABB765 /* WaveView.swift */,
+			);
+			path = "水波纹动画";
 			sourceTree = "<group>";
 		};
 		18EC103121C2328C0071824D /* Test */ = {
@@ -459,6 +472,7 @@
 		F60652CB20C12C8700DA2034 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				182C2B652254E04E00ABB765 /* 水波纹动画 */,
 				18FE829C21EA319D00291B64 /* Animate */,
 				18FBC35921C8815B00FBD25C /* ImgTitleDesView.swift */,
 				18FBC35A21C8815B00FBD25C /* ImgTitleDesView.xib */,
@@ -678,6 +692,7 @@
 				18F924F721C4E1C400C1BBA6 /* good7_30x30_@2x.png in Resources */,
 				F606528520C12B9400DA2034 /* LaunchScreen.storyboard in Resources */,
 				18F924FA21C4E1CC00C1BBA6 /* good8_30x30_@3x.png in Resources */,
+				182C2B692254E09E00ABB765 /* 水波纹.png in Resources */,
 				18F924FE21C4E1D100C1BBA6 /* good9_30x30_@2x.png in Resources */,
 				18EC104021C26B7F0071824D /* GiftCollectionCell.xib in Resources */,
 				18F924E621C4E19D00C1BBA6 /* good3_30x30_@2x.png in Resources */,
@@ -842,6 +857,7 @@
 				18EC103A21C25AE80071824D /* GiftListView.swift in Sources */,
 				18F56F9B21EF149900D24B9E /* ContinuegifAnimate.swift in Sources */,
 				18FCC93421D65EE400E5EB5E /* RadiateLayer.swift in Sources */,
+				182C2B682254E09E00ABB765 /* WaveView.swift in Sources */,
 				18EC103C21C262AF0071824D /* GiftModel.swift in Sources */,
 				18F924D321C4D79D00C1BBA6 /* TestAnimationVC.swift in Sources */,
 				18F6B03A21D3323B002DC622 /* TestOnlineButtonVC.swift in Sources */,
