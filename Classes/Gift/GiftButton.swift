@@ -16,8 +16,8 @@ class GiftButton: UIView {
     /// - titleAndDescribe: title + describe
     /// - none: 没有标题
     enum TitiType {
-        case title(_ title: String)
-        case titleAndDescribe(_ title: String, _ describe: String)
+        case title(title: String)
+        case titleAndDescribe(title: String, describe: String)
         case none
     }
     

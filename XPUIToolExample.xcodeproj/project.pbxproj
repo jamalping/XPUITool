@@ -86,8 +86,8 @@
 		F60652D920C12F4A00DA2034 /* TitleContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60652CE20C12C9E00DA2034 /* TitleContentView.swift */; };
 		F60652DA20C12F4A00DA2034 /* XPCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60652CD20C12C9E00DA2034 /* XPCycleScrollView.swift */; };
 		F60652DB20C12F4A00DA2034 /* CountdownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60652CC20C12C9E00DA2034 /* CountdownButton.swift */; };
+		FB0EAC8D2255015C00E7736B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAC8C2255015C00E7736B /* README.md */; };
 		FB4068D32152829400003882 /* PopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4068D22152829400003882 /* PopMenu.swift */; };
-		FB5AC8C72154E59900E3BAD2 /* ReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = FB5AC8C62154E59800E3BAD2 /* ReadMe.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,13 +202,10 @@
 		18FE829F21EA360300291B64 /* TestRotationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRotationVC.swift; sourceTree = "<group>"; };
 		6072634C0F464C468F7CF63E /* Pods-XPUITool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUITool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPUITool/Pods-XPUITool.debug.xcconfig"; sourceTree = "<group>"; };
 		611B4A6BE11C3D201E26CE5C /* Pods-XPUIToolExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUIToolExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPUIToolExampleUITests/Pods-XPUIToolExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		71B7A0BDF5B1F6CB6E329ED8 /* Pods-XPUITool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUITool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPUITool/Pods-XPUITool.debug.xcconfig"; sourceTree = "<group>"; };
 		7AA6CF8F5E2EF15C2E861EA9 /* Pods-XPUIToolExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUIToolExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPUIToolExample/Pods-XPUIToolExample.release.xcconfig"; sourceTree = "<group>"; };
-		9B056841D8210AA5390C66E6 /* Pods_XPUITool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XPUITool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE5BB00FD4B5CCBCFF8A4AB /* Pods-XPUIToolExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUIToolExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPUIToolExample/Pods-XPUIToolExample.debug.xcconfig"; sourceTree = "<group>"; };
 		C12C79EEBA5DA23FBB01B791 /* Pods-XPUITool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUITool.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPUITool/Pods-XPUITool.release.xcconfig"; sourceTree = "<group>"; };
 		C5A2E721B8925335F674EC08 /* Pods-XPUIToolExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUIToolExampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPUIToolExampleUITests/Pods-XPUIToolExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
-		CC0C87B0E0F4FED217866C43 /* Pods-XPUITool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUITool.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPUITool/Pods-XPUITool.release.xcconfig"; sourceTree = "<group>"; };
 		E288EC50CF8F3D6A91BA1745 /* Pods-XPUIToolExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUIToolExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPUIToolExampleTests/Pods-XPUIToolExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E7BF9F62064F65608C30FFDE /* Pods_XPUIToolExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XPUIToolExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F606527720C12B9300DA2034 /* XPUIToolExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XPUIToolExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -234,8 +231,8 @@
 		F60652CD20C12C9E00DA2034 /* XPCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPCycleScrollView.swift; sourceTree = "<group>"; };
 		F60652CE20C12C9E00DA2034 /* TitleContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleContentView.swift; sourceTree = "<group>"; };
 		F7F8CD869D961352DA3B1C63 /* Pods_XPUITool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XPUITool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0EAC8C2255015C00E7736B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FB4068D22152829400003882 /* PopMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopMenu.swift; sourceTree = "<group>"; };
-		FB5AC8C62154E59800E3BAD2 /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = ReadMe.md; path = ../../../ReadMe.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -402,7 +399,7 @@
 		F606526E20C12B9300DA2034 = {
 			isa = PBXGroup;
 			children = (
-				FB5AC8C62154E59800E3BAD2 /* ReadMe.md */,
+				FB0EAC8C2255015C00E7736B /* README.md */,
 				F60652CB20C12C8700DA2034 /* Classes */,
 				F606527920C12B9300DA2034 /* XPUIToolExample */,
 				F606528E20C12B9400DA2034 /* XPUIToolExampleTests */,
@@ -699,6 +696,7 @@
 				18F924FF21C4E1D100C1BBA6 /* good9_30x30_@3x.png in Resources */,
 				18F924D621C4DABE00C1BBA6 /* TestAnimationVC.xib in Resources */,
 				18F924F721C4E1C400C1BBA6 /* good7_30x30_@2x.png in Resources */,
+				FB0EAC8D2255015C00E7736B /* README.md in Resources */,
 				F606528520C12B9400DA2034 /* LaunchScreen.storyboard in Resources */,
 				18F924FA21C4E1CC00C1BBA6 /* good8_30x30_@3x.png in Resources */,
 				182C2B692254E09E00ABB765 /* 水波纹.png in Resources */,
@@ -712,7 +710,6 @@
 				18F924DE21C4E18C00C1BBA6 /* good1_30x30_@2x.png in Resources */,
 				18F924F321C4E1BC00C1BBA6 /* good6_30x30_@2x.png in Resources */,
 				18F924EA21C4E1A500C1BBA6 /* good4_30x30_@3x.png in Resources */,
-				FB5AC8C72154E59900E3BAD2 /* ReadMe.md in Resources */,
 				F606528020C12B9300DA2034 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -807,15 +804,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-XPUITool-checkManifestLockResult.txt",
 			);
