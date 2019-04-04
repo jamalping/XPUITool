@@ -100,6 +100,7 @@ class WaveView: UIView {
         self.layer.addSublayer(waveLayer1)
         self.layer.addSublayer(waveLayer2)
         self.layer.addSublayer(waveLayer3)
+        handleTimer()
     }
     private func wavelayer(_ layer: CAShapeLayer, color: UIColor)
     {
@@ -133,11 +134,11 @@ class WaveView: UIView {
         let wavePath2 = UIBezierPath()
         let wavePath3 = UIBezierPath()
         //振幅系数，振幅越大波峰越陡
-        waveAmplitude = bounds.height * rate * 0.1
+        waveAmplitude = bounds.height * rate
         //正弦型函数解析式：y = A * sin(ωx+φ) + h  ω 读alpha
         var y1 = (1 - rate) * bounds.height
-        var y2 = y1
-        var y3 = y1
+        var y2 = y1-5
+        var y3 = y1-10
         wavePath1.move(to: CGPoint.init(x: 0, y: y1))
         wavePath2.move(to: CGPoint.init(x: 0, y: y2))
         wavePath3.move(to: CGPoint.init(x: 0, y: y2))
@@ -158,7 +159,7 @@ class WaveView: UIView {
             let f3 =  0.55 * offsetX / bounds.width * .pi
             y1 = waveAmplitude * CGFloat(sin(Double(a * CGFloat(x) + f1))) + (h - 10)
             y2 = waveAmplitude * CGFloat(sin(Double(a * CGFloat(x) + f2))) + h
-            y3 = waveAmplitude * CGFloat(sin(Double(a * CGFloat(x) + f3))) + h
+            y3 = waveAmplitude * CGFloat(sin(Double(a * CGFloat(x) + f3))) + (h + 10)
             wavePath1.addLine(to: CGPoint.init(x: CGFloat(x), y: y1))
             wavePath2.addLine(to: CGPoint.init(x: CGFloat(x), y: y2))
             wavePath3.addLine(to: CGPoint.init(x: CGFloat(x), y: y3))
