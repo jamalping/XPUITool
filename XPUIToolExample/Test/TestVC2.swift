@@ -42,12 +42,12 @@ class TestVC2: UIViewController {
     }
     
     func testGiftButton() {
-        let btn1 = GiftButton.init(frame: CGRect.init(x: 100, y: 100, width: 100, height: 100), imageName: "testImg", titleType: .title("title"))
+        let btn1 = GiftButton.init(frame: CGRect.init(x: 100, y: 100, width: 100, height: 100), imageName: "testImg", titleType: .title(title: "title"))
         btn1.imageWidthHeight = 50
     
         view.addSubview(btn1)
         
-        let btn2 = GiftButton.init(frame: .zero, imageName: "testImg", titleType: .titleAndDescribe("title", "describe"))
+        let btn2 = GiftButton.init(frame: .zero, imageName: "testImg", titleType: .titleAndDescribe(title: "title", describe: "describe"))
     
         view.addSubview(btn2)
         btn2.snp.makeConstraints { (make) in

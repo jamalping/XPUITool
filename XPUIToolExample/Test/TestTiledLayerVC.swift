@@ -112,7 +112,8 @@ class LargeImageView: UIView {
         UIColor.white.set()
         NSString.localizedStringWithFormat(" %0.0f", log2f(Float(scale))).draw(
             at: CGPoint(x: rect.minX, y: rect.minY),
-            withAttributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: fontSize)]
+            
+            withAttributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: fontSize)]
         )
         
         UIColor.red.set()

@@ -86,6 +86,8 @@
 		F60652D920C12F4A00DA2034 /* TitleContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60652CE20C12C9E00DA2034 /* TitleContentView.swift */; };
 		F60652DA20C12F4A00DA2034 /* XPCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60652CD20C12C9E00DA2034 /* XPCycleScrollView.swift */; };
 		F60652DB20C12F4A00DA2034 /* CountdownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60652CC20C12C9E00DA2034 /* CountdownButton.swift */; };
+		FB0EAC8D2255015C00E7736B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAC8C2255015C00E7736B /* README.md */; };
+		FB4068D32152829400003882 /* PopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4068D22152829400003882 /* PopMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,6 +231,8 @@
 		F60652CD20C12C9E00DA2034 /* XPCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPCycleScrollView.swift; sourceTree = "<group>"; };
 		F60652CE20C12C9E00DA2034 /* TitleContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleContentView.swift; sourceTree = "<group>"; };
 		F7F8CD869D961352DA3B1C63 /* Pods_XPUITool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XPUITool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0EAC8C2255015C00E7736B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FB4068D22152829400003882 /* PopMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -395,6 +399,7 @@
 		F606526E20C12B9300DA2034 = {
 			isa = PBXGroup;
 			children = (
+				FB0EAC8C2255015C00E7736B /* README.md */,
 				F60652CB20C12C8700DA2034 /* Classes */,
 				F606527920C12B9300DA2034 /* XPUIToolExample */,
 				F606528E20C12B9400DA2034 /* XPUIToolExampleTests */,
@@ -479,6 +484,7 @@
 				18F924D421C4D81F00C1BBA6 /* Animation */,
 				18EC103421C246C40071824D /* Gift */,
 				1812CA7621BFBBE3003D6B40 /* Slide */,
+				FB4068D22152829400003882 /* PopMenu.swift */,
 				F60652CE20C12C9E00DA2034 /* TitleContentView.swift */,
 				1812CA8E21C0F552003D6B40 /* ImageTitleDesView.swift */,
 				F60652CD20C12C9E00DA2034 /* XPCycleScrollView.swift */,
@@ -690,6 +696,7 @@
 				18F924FF21C4E1D100C1BBA6 /* good9_30x30_@3x.png in Resources */,
 				18F924D621C4DABE00C1BBA6 /* TestAnimationVC.xib in Resources */,
 				18F924F721C4E1C400C1BBA6 /* good7_30x30_@2x.png in Resources */,
+				FB0EAC8D2255015C00E7736B /* README.md in Resources */,
 				F606528520C12B9400DA2034 /* LaunchScreen.storyboard in Resources */,
 				18F924FA21C4E1CC00C1BBA6 /* good8_30x30_@3x.png in Resources */,
 				182C2B692254E09E00ABB765 /* 水波纹.png in Resources */,
@@ -797,15 +804,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-XPUITool-checkManifestLockResult.txt",
 			);
@@ -866,6 +869,7 @@
 				18EC103321C232F20071824D /* TestVC1.swift in Sources */,
 				1812CA8D21C0F53C003D6B40 /* TitleTextFeild.swift in Sources */,
 				18FE82A021EA360300291B64 /* TestRotationVC.swift in Sources */,
+				FB4068D32152829400003882 /* PopMenu.swift in Sources */,
 				F606527D20C12B9300DA2034 /* ViewController.swift in Sources */,
 				18FCC92F21D655C200E5EB5E /* AnimationVC1.swift in Sources */,
 				1812CA7E21C0A829003D6B40 /* XPPageContentView.swift in Sources */,
