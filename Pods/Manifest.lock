@@ -7,7 +7,7 @@ DEPENDENCIES:
   - XPUtil (= 2.0.1)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - SnapKit
     - XPUtil
 
@@ -17,4 +17,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: d9de5439f2f73a95b0ae1869c41b06a1f5dd35c9
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4

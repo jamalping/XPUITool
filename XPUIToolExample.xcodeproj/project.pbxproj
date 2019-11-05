@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -62,6 +62,7 @@
 		18FCC93421D65EE400E5EB5E /* RadiateLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FCC93321D65EE400E5EB5E /* RadiateLayer.swift */; };
 		18FE829E21EA31D700291B64 /* Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE829D21EA31D700291B64 /* Animate.swift */; };
 		18FE82A021EA360300291B64 /* TestRotationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE829F21EA360300291B64 /* TestRotationVC.swift */; };
+		5E7503D7236FE651003532E7 /* TestRingProgrssVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7503D6236FE651003532E7 /* TestRingProgrssVC.swift */; };
 		78250316CFAADE38E1A0290D /* Pods_XPUIToolExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7BF9F62064F65608C30FFDE /* Pods_XPUIToolExampleUITests.framework */; };
 		AE78056B9913866B5D26A51B /* Pods_XPUITool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F8CD869D961352DA3B1C63 /* Pods_XPUITool.framework */; };
 		E7576BD8EAE14F189068ED16 /* Pods_XPUIToolExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D57AD7AD492E5D413BBD8F7 /* Pods_XPUIToolExampleTests.framework */; };
@@ -200,6 +201,7 @@
 		18FCC93321D65EE400E5EB5E /* RadiateLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiateLayer.swift; sourceTree = "<group>"; };
 		18FE829D21EA31D700291B64 /* Animate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animate.swift; sourceTree = "<group>"; };
 		18FE829F21EA360300291B64 /* TestRotationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRotationVC.swift; sourceTree = "<group>"; };
+		5E7503D6236FE651003532E7 /* TestRingProgrssVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRingProgrssVC.swift; sourceTree = "<group>"; };
 		6072634C0F464C468F7CF63E /* Pods-XPUITool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUITool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPUITool/Pods-XPUITool.debug.xcconfig"; sourceTree = "<group>"; };
 		611B4A6BE11C3D201E26CE5C /* Pods-XPUIToolExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUIToolExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPUIToolExampleUITests/Pods-XPUIToolExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7AA6CF8F5E2EF15C2E861EA9 /* Pods-XPUIToolExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUIToolExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-XPUIToolExample/Pods-XPUIToolExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -313,6 +315,7 @@
 				18FE829F21EA360300291B64 /* TestRotationVC.swift */,
 				18F56F9821EF12F900D24B9E /* TestcontinueSendGifVC.swift */,
 				1837493821FF09710067BABB /* TestTapZanVC.swift */,
+				5E7503D6236FE651003532E7 /* TestRingProgrssVC.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -822,19 +825,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-XPUIToolExample/Pods-XPUIToolExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/XPUtil/XPUtil.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XPUIToolExample/Pods-XPUIToolExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XPUtil.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XPUIToolExample/Pods-XPUIToolExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XPUIToolExample/Pods-XPUIToolExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XPUIToolExample/Pods-XPUIToolExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -869,6 +869,7 @@
 				18EC103321C232F20071824D /* TestVC1.swift in Sources */,
 				1812CA8D21C0F53C003D6B40 /* TitleTextFeild.swift in Sources */,
 				18FE82A021EA360300291B64 /* TestRotationVC.swift in Sources */,
+				5E7503D7236FE651003532E7 /* TestRingProgrssVC.swift in Sources */,
 				FB4068D32152829400003882 /* PopMenu.swift in Sources */,
 				F606527D20C12B9300DA2034 /* ViewController.swift in Sources */,
 				18FCC92F21D655C200E5EB5E /* AnimationVC1.swift in Sources */,

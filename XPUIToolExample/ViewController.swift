@@ -44,8 +44,9 @@ class ViewController: UIViewController {
         case xpRotantion = "旋转放大动画"
         case continousSendGif = "连续送礼物动画"
         case tapZan = "仿抖音点赞动画"
+        case ringRing = "环形进度"
     }
-    let datasource: [TestType] = [.translucentCircularButton, .slid, .titleTextFeil, .gift, .animation, .tiledLayer, .xppickerView, .xpOnlineBtn, .xpRotantion, .continousSendGif,.tapZan]
+    let datasource: [TestType] = [.translucentCircularButton, .slid, .titleTextFeil, .gift, .animation, .tiledLayer, .xppickerView, .xpOnlineBtn, .xpRotantion, .continousSendGif,.tapZan, .ringRing]
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -125,6 +126,9 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
         case .tapZan:
             
             let vc = TestTapZanVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .ringRing:
+            let vc = TestRingProgrssVC()
             self.navigationController?.pushViewController(vc, animated: true)
             
         default: break
