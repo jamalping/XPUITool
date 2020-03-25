@@ -32,8 +32,8 @@ class TestPopVC: UIViewController {
         popVIew?.showType = .bottomToTop
         popVIew!.markView.addGestureRecognizer(UITapGestureRecognizer.init(target: self, action: #selector(hiddenPopVIew)))
         popVIew!.show()
-        
     }
+    
     @objc
     func hiddenPopVIew() {
         popVIew?.hidden()
