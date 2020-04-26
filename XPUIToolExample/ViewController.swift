@@ -46,14 +46,16 @@ class ViewController: UIViewController {
         case tapZan = "仿抖音点赞动画"
         case ringRing = "环形进度"
         case pop = "底部弹出框"
+        case popSelectMenu = "弹出选择菜单"
     }
-    let datasource: [TestType] = [.translucentCircularButton, .slid, .titleTextFeil, .gift, .animation, .tiledLayer, .xppickerView, .xpOnlineBtn, .xpRotantion, .continousSendGif,.tapZan, .ringRing, .pop]
+
+    let datasource: [TestType] = [.translucentCircularButton, .slid, .titleTextFeil, .gift, .animation, .tiledLayer, .xppickerView, .xpOnlineBtn, .xpRotantion, .continousSendGif,.tapZan, .ringRing, .pop, .popSelectMenu]
     @IBOutlet weak var tableView: UITableView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.tableFooterView = UIView()
     }
     
 
@@ -131,10 +133,12 @@ extension ViewController: UITableViewDataSource,UITableViewDelegate {
         case .ringRing:
             let vc = TestRingProgrssVC()
             self.navigationController?.pushViewController(vc, animated: true)
-            
         case .pop:
-            
             let vc = TestPopVC()
+            self.navigationController?.pushViewController(vc, animated: true)
+
+        case .popSelectMenu:
+            let vc = PopSelectMenu()
             self.navigationController?.pushViewController(vc, animated: true)
         default: break
             

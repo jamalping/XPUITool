@@ -222,7 +222,7 @@ class SwiftPopMenuCell: UITableViewCell {
     
 }
 
-extension PopMenu : UITableViewDataSource{
+extension PopMenu : UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return popData.count

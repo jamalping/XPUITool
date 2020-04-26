@@ -62,6 +62,7 @@
 		18FCC93421D65EE400E5EB5E /* RadiateLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FCC93321D65EE400E5EB5E /* RadiateLayer.swift */; };
 		18FE829E21EA31D700291B64 /* Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE829D21EA31D700291B64 /* Animate.swift */; };
 		18FE82A021EA360300291B64 /* TestRotationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE829F21EA360300291B64 /* TestRotationVC.swift */; };
+		5E47703F239217BC00727BA5 /* PopSelectMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E47703E239217BC00727BA5 /* PopSelectMenuVC.swift */; };
 		5E7503D7236FE651003532E7 /* TestRingProgrssVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7503D6236FE651003532E7 /* TestRingProgrssVC.swift */; };
 		78250316CFAADE38E1A0290D /* Pods_XPUIToolExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7BF9F62064F65608C30FFDE /* Pods_XPUIToolExampleUITests.framework */; };
 		AE78056B9913866B5D26A51B /* Pods_XPUITool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F8CD869D961352DA3B1C63 /* Pods_XPUITool.framework */; };
@@ -206,6 +207,7 @@
 		18FCC93321D65EE400E5EB5E /* RadiateLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiateLayer.swift; sourceTree = "<group>"; };
 		18FE829D21EA31D700291B64 /* Animate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animate.swift; sourceTree = "<group>"; };
 		18FE829F21EA360300291B64 /* TestRotationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRotationVC.swift; sourceTree = "<group>"; };
+		5E47703E239217BC00727BA5 /* PopSelectMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopSelectMenuVC.swift; sourceTree = "<group>"; };
 		5E7503D6236FE651003532E7 /* TestRingProgrssVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRingProgrssVC.swift; sourceTree = "<group>"; };
 		6072634C0F464C468F7CF63E /* Pods-XPUITool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUITool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPUITool/Pods-XPUITool.debug.xcconfig"; sourceTree = "<group>"; };
 		611B4A6BE11C3D201E26CE5C /* Pods-XPUIToolExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XPUIToolExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XPUIToolExampleUITests/Pods-XPUIToolExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -504,6 +506,7 @@
 				F60652CD20C12C9E00DA2034 /* XPCycleScrollView.swift */,
 				F60652CC20C12C9E00DA2034 /* CountdownButton.swift */,
 				18403ED521B7D14400AD0CF4 /* TranslucentCircularButton.swift */,
+				5E47703E239217BC00727BA5 /* PopSelectMenuVC.swift */,
 				1812CA8C21C0F53B003D6B40 /* TitleTextFeild.swift */,
 				18F9250921C778C600C1BBA6 /* XPPickView.swift */,
 				18F6B03721D331D7002DC622 /* XPOnlineButton.swift */,
@@ -859,6 +862,7 @@
 				18F6B03821D331D7002DC622 /* XPOnlineButton.swift in Sources */,
 				FB9399202408FBDD0081C518 /* BasePopView.swift in Sources */,
 				18F9250C21C779B300C1BBA6 /* TestXPPickerViewVC.swift in Sources */,
+				5E47703F239217BC00727BA5 /* PopSelectMenuVC.swift in Sources */,
 				18EC103E21C26B4A0071824D /* GiftCollectionCell.swift in Sources */,
 				18F56F9921EF12F900D24B9E /* TestcontinueSendGifVC.swift in Sources */,
 				18403ED621B7D14400AD0CF4 /* TranslucentCircularButton.swift in Sources */,
